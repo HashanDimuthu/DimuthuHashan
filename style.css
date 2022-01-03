@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Vujahday Script;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: #fff;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-card{
+    padding-top: 1rem;
+    width: 40rem;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-header{
+    background: #000;
+    padding: 6rem 4rem;
+}
+
+.pic{
+    display: inline-block;
+    padding: 0.8rem;
+    background: linear-gradient(130deg #000 ,#fff);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 20% 20%;
+    animation: animated-gradient 2a linear infinite;
+}
+
+@keyframes animated-gradient{
+    25%{
+        background-position:  left bottom;
+    }
+
+    50%{
+        background-position:  right bottom;
+    }
+
+    75%{
+        background-position:  right top
+    }
+
+    100%{
+        background-position:  left top;
+    }
+}
+
+.pic img{
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 9rem;
+    border: .3rem solid #fff;
+}
+
+.name{
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.desc{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.link{
+    letter-spacing: 1rem;
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.link a{
+    color: #fff;
+    transition: 0.6s ease-in-out;
+}
+
+.link a:hover{
+    color: blue;
+}
+
+.end{
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.end a{
+    color: #fff;
+    transition: 0.6s ease-in-out;
+}
+
+.end a:hover{
+    color: blue;
+    letter-spacing: 3px;
+}
+
+.mode-tog{
+    background-color: #fff;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    cursor: pointer;
+    width: 2rem;
+    height:  2rem;
+}
+
+@media(max-width:991px){
+    .card-header{
+        background: #000;
+        padding: 4rem 2rem;
+    }
+
+    .profile-card{
+        padding-top: 5rem;
+        width: 20rem;
+        text-align: center;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .pic img{
+        display: block;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 9rem;
+        border: .3rem solid #fff;
+    }
+    
+    .name{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 1rem 0;
+    }
+    
+    .desc{
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 1rem 0;
+    }
+    
+    .link{
+        letter-spacing: 1rem;
+        padding-top: 1rem;
+        font-size: 1rem;
+    }
+    
+    
+}
