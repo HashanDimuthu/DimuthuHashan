@@ -6,6 +6,7 @@
     font-family: Vujahday Script;
     box-sizing: border-box;
     text-decoration: none;
+    font-weight: bold;
 }
 
 body{
@@ -14,15 +15,14 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size :cover;
-    overflow: hidden;
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
 .profile-card{
-    padding-top: 1rem;
-    width: 30rem;
+    padding-top: 1.5rem;
+    width: 27rem;
     text-align: center;
     border-radius: 8px;
     overflow: hidden;
@@ -32,6 +32,7 @@ body{
     background: #000;
     padding: 6rem 4rem;
 }
+
 
 .pic{
     display: inline-block;
